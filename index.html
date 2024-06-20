@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" aria-level="header section">
         <div class="container">
-            <div class="header__nav">
+            <div class="header__nav"  aria-level="header navigation">
                 <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
                 <ul class="header__nav-list" id="headerUl">
                     <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Shop</a></li>
@@ -33,6 +33,16 @@
             <a href="#!" class="header__cart">My Cart </a>
         </div>
     </header>
+
+    <section class="welcome" aria-level="welcome section">
+        <div class="container">
+            <div class="welcome__content"  aria-level="welcome block content">
+                <h1 class="welcome__content-title">The Desk Shelf System</h1>
+                <p class="welcome__content-desc">Available in Walnut or Maple</p>
+                <p class="welcome__content-txt">LEARN MORE</p>
+            </div>
+        </div>
+    </section>
 
 
    

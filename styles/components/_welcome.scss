@@ -1,0 +1,27 @@
+.welcome {
+  background-image: url(../img/welcome/welcome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 504px;
+  background-position: 50% center;
+
+  &__content {
+    padding-top: 188px;
+    text-align: center;
+    color: var(--c-text-white);
+    &-title {
+      font: var(--txt-400-43);
+      margin-bottom: 12px;
+    }
+    &-desc {
+      font: var(--txt-400-15);
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+    }
+    &-txt {
+      font: var(--txt-400-13);
+      letter-spacing: 0.11em;
+    }
+  }
+}

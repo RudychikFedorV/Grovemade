@@ -150,6 +150,8 @@ p {
   --html-fs: 1px;
   --ff: "Roboto", sans-serif;
   --transition: 0.2s all ease-in-out;
+  --txt-400-43: normal 400 43px / 107% var(--ff);
+  --txt-400-15: normal 400 15px / 100% var(--ff);
   --txt-400-14: normal 400 14px / 100% var(--ff);
   --txt-400-13: normal 400 13px / 100% var(--ff);
   --c-primary: #9aa8b1;
@@ -284,8 +286,31 @@ body {
   }
 }
 
-.footer {
-  padding: 20px;
+.welcome {
+  background-image: url(../img/welcome/welcome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 504px;
+  background-position: 50% center;
+}
+.welcome__content {
+  padding-top: 188px;
+  text-align: center;
+  color: var(--c-text-white);
+}
+.welcome__content-title {
+  font: var(--txt-400-43);
+  margin-bottom: 12px;
+}
+.welcome__content-desc {
+  font: var(--txt-400-15);
+  letter-spacing: 0.05em;
+  margin-bottom: 28px;
+}
+.welcome__content-txt {
+  font: var(--txt-400-13);
+  letter-spacing: 0.11em;
 }
 
 /*# sourceMappingURL=styles.css.map */
