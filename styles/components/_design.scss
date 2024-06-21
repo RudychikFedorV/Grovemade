@@ -1,0 +1,63 @@
+.design {
+  .container {
+    padding: 80px 0 74px;
+  }
+  &__content {
+    text-align: center;
+    margin-bottom: 81px;
+    @include mobile {
+      margin-bottom: 50px;
+    }
+    &-title {
+      font: var(--txt-400-43-135);
+      color: var(--c-color-black);
+      margin-bottom: 23px;
+    }
+    &-desc {
+      font: var(--txt-400-14-171);
+      letter-spacing: 0.06em;
+      color: var(--c-color-grey);
+      margin-bottom: 26px;
+    }
+    &-txt {
+      font: var(--txt-400-13-162);
+      letter-spacing: 0.11em;
+      color: var(--c-color-black);
+    }
+  }
+  &__blocks {
+    display: flex;
+    justify-content: center;
+    @include tablet-small {
+      flex-wrap: wrap;
+    }
+  }
+  &__block {
+    padding: 0 12.5px;
+    text-align: center;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+    &-img {
+      margin-bottom: 51px;
+      @include mobile {
+        margin-bottom: 30px;
+      }
+    }
+    &-title {
+      font: var(--txt-400-27);
+      color: var(--c-color-black);
+      margin-bottom: 23px;
+    }
+    &-desc {
+      font: var(--txt-400-13);
+      letter-spacing: 0.11em;
+      color: var(--c-color-black);
+      margin-bottom: 51px;
+      @include mobile {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
