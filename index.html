@@ -19,64 +19,60 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header" aria-level="header section">
-            <div class="container">
-                <div class="header__nav" aria-level="header navigation">
-                    <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
-                    <ul class="header__nav-list" id="headerUl">
-                        <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Shop</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Explore</a></li>
-                        <span class="material-icons icon-close" onclick="navToggle()">close</span>
-                    </ul>
-                    <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-                </div>
-
-                <a href="#!"><img src="./img/header/logo.svg" alt="Grovemade" class="header__logo"></a>
-
-                <a href="#!" class="header__cart">My Cart </a>
+    <header class="header" aria-level="header section">
+        <div class="container">
+            <div class="header__nav" aria-level="header navigation">
+                <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+                <ul class="header__nav-list" id="headerUl">
+                    <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Shop</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Explore</a></li>
+                    <span class="material-icons icon-close" onclick="navToggle()">close</span>
+                </ul>
+                <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
             </div>
-        </header>
 
-        <section class="welcome" aria-level="welcome section">
-            <div class="container">
-                <div class="welcome__content" aria-level="welcome block content">
-                    <h1 class="welcome__content-title">The Desk Shelf System</h1>
-                    <p class="welcome__content-desc">Available in Walnut or Maple</p>
-                    <p class="welcome__content-txt">LEARN MORE</p>
-                </div>
-            </div>
-        </section>
+            <a href="#!"><img src="./img/header/logo.svg" alt="Grovemade" class="header__logo"></a>
 
-        <sections class="design" aria-level="design section">
-            <div class="container">
-                <div class="design__content" aria-level="chapter content">
-                    <h1 class="design__content-title">Design Inspires</h1>
-                    <p class="design__content-desc">Build your dream workspace, so you can get your best work done.</p>
-                    <p class="design__content-txt">GET STARTED</p>
-                </div>
-                <div class="design__blocks" aria-level="chapter blocks">
-                    <a href="#!" class="design__block" aria-level="block img info" data-aos="fade-left">
-                        <img src="./img/design/01.png" alt="" class="design__block-img">
-                        <h2 class="design__block-title">Desk Pads</h2>
-                        <p class="design__block-desc">LEARN MORE</p>
-                    </a>
-                    <a href="#!" class="design__block" aria-level="block img info" data-aos="fade-up">
-                        <img src="./img/design/02.png" alt="" class="design__block-img">
-                        <h2 class="design__block-title">Laptop Stands</h2>
-                        <p class="design__block-desc">LEARN MORE</p>
-                    </a>
-                </div>
+            <a href="#!" class="header__cart">My Cart </a>
+        </div>
+    </header>
+
+    <section class="welcome" aria-level="welcome section">
+        <div class="container">
+            <div class="welcome__content" aria-level="welcome block content">
+                <h1 class="welcome__content-title">The Desk Shelf System</h1>
+                <p class="welcome__content-desc">Available in Walnut or Maple</p>
+                <p class="welcome__content-txt">LEARN MORE</p>
             </div>
-        </sections>
-    </div>
+        </div>
+    </section>
+
+    <sections class="design" aria-level="design section">
+        <div class="container">
+            <div class="design__content" aria-level="chapter content">
+                <h1 class="design__content-title">Design Inspires</h1>
+                <p class="design__content-desc">Build your dream workspace, so you can get your best work done.</p>
+                <p class="design__content-txt">GET STARTED</p>
+            </div>
+            <div class="design__blocks" aria-level="chapter blocks" id="design-blocks" data-aos="fade-up"></div>
+        </div>
+    </sections>
+
+    <section class="products" aria-level="products section"></section>
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script>
+       function navToggle() {
+        document.getElementById("headerUl").classList.toggle("_active");
+        document.getElementById("headerBackdrop").classList.toggle("_active");
+      } 
+    </script>
+    
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {
+      "image": "./img/design/01.png",
+      "title": "Desk Pads",
+      "desc": "LEARN MORE",
+      "link": "#!"
+    },
+    {
+      "image": "./img/design/02.png",
+      "title": "Laptop Stands",
+      "desc": "LEARN MORE",
+      "link": "#!"
+    }
+  ]
+}

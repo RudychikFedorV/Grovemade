@@ -1,1 +1,1 @@
-[Grovemade (html, scss. mixins, vars) ](https://rudychikfedorv.github.io/Grovemade/)
+[Grovemade (html, scss. mixins, vars, .json, AOS) ](https://rudychikfedorv.github.io/Grovemade/)
