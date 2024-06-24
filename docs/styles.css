@@ -152,8 +152,10 @@ p {
   --transition: 0.2s all ease-in-out;
   --txt-400-43-135: normal 400 43px / 135% var(--ff);
   --txt-400-43: normal 400 43px / 107% var(--ff);
+  --txt-400-34: normal 400 34px / 106% var(--ff);
   --txt-400-33: normal 400 33px / 109% var(--ff);
   --txt-400-27: normal 400 27px / 111% var(--ff);
+  --txt-400-16: normal 400 16px / 150% var(--ff);
   --txt-400-15: normal 400 15px / 100% var(--ff);
   --txt-400-14-171: normal 400 14px / 171% var(--ff);
   --txt-400-14: normal 400 14px / 100% var(--ff);
@@ -437,6 +439,26 @@ body {
   height: 504px;
   background-position: 50% center;
   margin-bottom: 120px;
+}
+
+.way {
+  margin-bottom: 100px;
+}
+.way__content {
+  text-align: center;
+}
+.way__content-title {
+  font: var(--txt-400-34);
+  color: var(--c-color-black);
+  margin-bottom: 23px;
+}
+.way__content-desc {
+  max-width: 777px;
+  font: var(--txt-400-16);
+  letter-spacing: 0.05em;
+  color: var(--c-color-grey);
+  margin-inline: auto;
+  margin-bottom: 23px;
 }
 
 /*# sourceMappingURL=styles.css.map */

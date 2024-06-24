@@ -1,0 +1,19 @@
+.way {
+  margin-bottom: 100px;
+  &__content {
+    text-align: center;
+    &-title {
+      font: var(--txt-400-34);
+      color: var(--c-color-black);
+      margin-bottom: 23px;
+    }
+    &-desc {
+      max-width: 777px;
+      font: var(--txt-400-16);
+      letter-spacing: 0.05em;
+      color: var(--c-color-grey);
+      margin-inline: auto;
+      margin-bottom: 23px;
+    }
+  }
+}
