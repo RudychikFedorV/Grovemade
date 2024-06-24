@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="owl/owl.carousel.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.css">
     <link rel="stylesheet" href="./docs/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
@@ -58,21 +60,97 @@
         </div>
     </sections>
 
-    <section class="products" aria-level="products section"></section>
+    <section class="products" aria-level="products section">
+        <div class="container">
+            <div class="products__content">
+                <h1 class="products__content-title">Featured Products</h1>
+                <p class="products__content-desc">See What’s Trending Right Now</p>
+            </div>
+
+            <div class="products__blocks owl-carousel owl-theme" aria-level="products carousel">
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/01.png" alt="Walnut MagSafe Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut MagSafe Stand</p>
+                    <p class="products__list-price">$120</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/02.png" alt="Walnut Laptop Riser" class="products__list-img">
+                    <p class="products__list-name">Walnut Laptop Riser</p>
+                    <p class="products__list-price">$150</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/03.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut iPad Stand</p>
+                    <p class="products__list-price">$80</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/04.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut Monitor Stand</p>
+                    <p class="products__list-price">$100</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/01.png" alt="Walnut MagSafe Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut MagSafe Stand</p>
+                    <p class="products__list-price">$120</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/02.png" alt="Walnut Laptop Riser" class="products__list-img">
+                    <p class="products__list-name">Walnut Laptop Riser</p>
+                    <p class="products__list-price">$150</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/03.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut iPad Stand</p>
+                    <p class="products__list-price">$80</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/04.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut Monitor Stand</p>
+                    <p class="products__list-price">$100</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/01.png" alt="Walnut MagSafe Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut MagSafe Stand</p>
+                    <p class="products__list-price">$120</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/02.png" alt="Walnut Laptop Riser" class="products__list-img">
+                    <p class="products__list-name">Walnut Laptop Riser</p>
+                    <p class="products__list-price">$150</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/03.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut iPad Stand</p>
+                    <p class="products__list-price">$80</p>
+                </a>
+                <a href="#!" class="products__list carousel-img">
+                    <img src="./img/products/04.png" alt="Walnut iPad Stand" class="products__list-img">
+                    <p class="products__list-name">Walnut Monitor Stand</p>
+                    <p class="products__list-price">$100</p>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="owl/owl.script.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script>
-       function navToggle() {
-        document.getElementById("headerUl").classList.toggle("_active");
-        document.getElementById("headerBackdrop").classList.toggle("_active");
-      } 
+        function navToggle() {
+            document.getElementById("headerUl").classList.toggle("_active");
+            document.getElementById("headerBackdrop").classList.toggle("_active");
+        } 
     </script>
-    
+
 </body>
 
 </html>

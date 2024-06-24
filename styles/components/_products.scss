@@ -1,0 +1,36 @@
+.products {
+  margin-bottom: 100px;
+  &__content {
+    text-align: center;
+    margin-bottom: 75px;
+    &-title {
+      font: var(--txt-400-33);
+      color: var(--c-color-black);
+      margin-bottom: 16px;
+    }
+    &-desc {
+      font: var(--txt-400-15);
+      letter-spacing: 0.05em;
+      color: var(--c-color-grey);
+    }
+  }
+
+  &__list {
+    width: 100%;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+    &-name {
+      padding-top: 22.39px;
+      font: var(--txt-400-13-162);
+      letter-spacing: 0.05em;
+      color: var(--c-color-grey);
+    }
+    &-price {
+      font: var(--txt-400-12);
+      letter-spacing: 0.06em;
+      color: var(--c-color-grey);
+    }
+  }
+}
