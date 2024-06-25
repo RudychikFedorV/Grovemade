@@ -31,6 +31,6 @@ export function initializeDesignJson() {
           blocksContainer.appendChild(blockLink);
         });
       })
-      .catch((error) => console.error("Ошибка загрузки данных:", error));
+      .catch((error) => console.error("Error loading data:", error));
   });
 }
