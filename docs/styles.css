@@ -527,4 +527,26 @@ body {
   color: var(--c-color-black);
 }
 
+.inspiration {
+  margin-bottom: 39px;
+}
+.inspiration__content {
+  text-align: center;
+  padding: 120px 5px;
+  background: var(--c-primary);
+}
+.inspiration__content img {
+  cursor: pointer;
+}
+.inspiration__content-title {
+  margin: 24px 0;
+  font: var(--txt-400-43-135);
+  color: var(--c-text-white);
+}
+.inspiration__content-desc {
+  font: var(--txt-400-14-171);
+  letter-spacing: 0.06em;
+  color: var(--c-text-white);
+}
+
 /*# sourceMappingURL=styles.css.map */
