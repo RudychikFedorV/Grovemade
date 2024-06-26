@@ -47,3 +47,13 @@ $mobile-small: 480px;
   align-items: center;
   flex-direction: column;
 }
+@mixin flex-center-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin flex-center-none {
+  display: flex;
+  justify-content: center;
+}

@@ -155,8 +155,11 @@ p {
   --txt-400-34: normal 400 34px / 106% var(--ff);
   --txt-400-33: normal 400 33px / 109% var(--ff);
   --txt-400-27: normal 400 27px / 111% var(--ff);
+  --txt-400-22: normal 400 22px / 109% var(--ff);
   --txt-400-16: normal 400 16px / 150% var(--ff);
+  --txt-400-16-100: normal 400 16px / 100% var(--ff);
   --txt-400-15: normal 400 15px / 100% var(--ff);
+  --txt-400-15-107: normal 400 15px / 107% var(--ff);
   --txt-400-14-171: normal 400 14px / 171% var(--ff);
   --txt-400-14: normal 400 14px / 100% var(--ff);
   --txt-400-13-162: normal 400 13px / 162% var(--ff);
@@ -167,6 +170,7 @@ p {
   --c-text-white: #fff;
   --c-color-black: #000;
   --c-background-backdrop: rgba(0, 0, 0, 0.6);
+  --c-background: #f9f9f9;
 }
 
 html {
@@ -546,6 +550,92 @@ body {
 .inspiration__content-desc {
   font: var(--txt-400-14-171);
   letter-spacing: 0.06em;
+  color: var(--c-text-white);
+}
+
+.newsletter {
+  margin-bottom: 80px;
+  background: var(--c-background);
+}
+.newsletter__content {
+  position: relative;
+  padding-top: 80px;
+  display: flex;
+  gap: 12.5;
+}
+@media (max-width: 768px) {
+  .newsletter__content {
+    flex-wrap: wrap;
+    row-gap: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.newsletter__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.newsletter__contacts-txt {
+  font: var(--txt-400-22);
+  color: var(--c-color-black);
+  white-space: nowrap;
+  transition: var(--transition);
+}
+.newsletter__contacts-txt:hover {
+  opacity: 0.7;
+}
+.newsletter__signup {
+  max-width: 350px;
+}
+.newsletter__signup-title {
+  font: var(--txt-400-22);
+  color: var(--c-color-black);
+  margin-bottom: 23px;
+}
+.newsletter__signup-desc {
+  font: var(--txt-400-14);
+  letter-spacing: 0.06em;
+  color: var(--c-color-grey);
+  margin-bottom: 91.45px;
+}
+.newsletter__signup-span {
+  display: inline-block;
+  width: 320px;
+  height: 1px;
+  background: var(--c-color-black);
+}
+@media (max-width: 768px) {
+  .newsletter__signup-span {
+    display: none;
+  }
+}
+.newsletter__goUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  background: var(--c-color-black);
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.newsletter__goUp:hover {
+  opacity: 0.7;
+}
+.newsletter__goUp-go {
+  font: var(--txt-400-15-107);
+  letter-spacing: 0.05em;
+  color: var(--c-text-white);
+}
+.newsletter__goUp-up {
+  font: var(--txt-400-16-100);
+  letter-spacing: 0.05em;
   color: var(--c-text-white);
 }
 

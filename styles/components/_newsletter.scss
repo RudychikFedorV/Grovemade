@@ -1,0 +1,77 @@
+.newsletter {
+  margin-bottom: 80px;
+  background: var(--c-background);
+  &__content {
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    gap: 12.5;
+    @include tablet-small {
+      flex-wrap: wrap;
+      row-gap: 50px;
+      @include flex-center-none;
+      text-align: center;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-txt {
+      font: var(--txt-400-22);
+      color: var(--c-color-black);
+      white-space: nowrap;
+      transition: var(--transition);
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__signup {
+    max-width: 350px;
+    &-title {
+      font: var(--txt-400-22);
+      color: var(--c-color-black);
+      margin-bottom: 23px;
+    }
+    &-desc {
+      font: var(--txt-400-14);
+      letter-spacing: 0.06em;
+      color: var(--c-color-grey);
+      margin-bottom: 91.45px;
+    }
+    &-span {
+      display: inline-block;
+      width: 320px;
+      height: 1px;
+      background: var(--c-color-black);
+      @include tablet-small {
+        display: none;
+      }
+    }
+  }
+  &__goUp {
+    @include flex-center-center-column;
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    background: var(--c-color-black);
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+    &-go {
+      font: var(--txt-400-15-107);
+      letter-spacing: 0.05em;
+      color: var(--c-text-white);
+    }
+    &-up {
+      font: var(--txt-400-16-100);
+      letter-spacing: 0.05em;
+      color: var(--c-text-white);
+    }
+  }
+}
