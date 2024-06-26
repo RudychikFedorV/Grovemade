@@ -1,0 +1,24 @@
+.footer {
+  padding: 80px 0 28px;
+  background: var(--c-background);
+  &__content {
+    display: flex;
+    justify-content: end;
+    gap: 37px;
+    @include tablet-small {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    &-desc {
+      font: var(--txt-400-13);
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      color: var(--c-color-desc);
+      transition: var(--transition);
+      &:hover {
+        color: var(--c-color-black);
+      }
+    }
+  }
+}

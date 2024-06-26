@@ -1,5 +1,4 @@
 .newsletter {
-  margin-bottom: 80px;
   background: var(--c-background);
   &__content {
     position: relative;
@@ -39,6 +38,9 @@
       letter-spacing: 0.06em;
       color: var(--c-color-grey);
       margin-bottom: 91.45px;
+      @include tablet-small {
+        margin-bottom: 0;
+      }
     }
     &-span {
       display: inline-block;

@@ -6,3 +6,4 @@ initializeDesignJson();
 import { initializeWorkJson } from "./modules/work-json.js";
 initializeWorkJson();
 
+document.getElementById("copyright").textContent = new Date().getFullYear();
